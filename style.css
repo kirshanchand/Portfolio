@@ -243,6 +243,7 @@ h3 {
   border: 0.55rem solid var(--bg-soft);
   border-radius: 50%;
   object-fit: cover;
+  object-position: center 18%;
   width: min(20rem, 70vw);
 }
 
