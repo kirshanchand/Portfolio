@@ -237,12 +237,24 @@ h3 {
   padding: 0.35rem;
 }
 
-.profile-ring img {
+.profile-ring img,
+.profile-monogram {
   aspect-ratio: 1;
   border: 0.55rem solid var(--bg-soft);
   border-radius: 50%;
   object-fit: cover;
   width: min(20rem, 70vw);
+}
+
+.profile-monogram {
+  align-items: center;
+  background: var(--bg-soft);
+  color: var(--text);
+  display: flex;
+  font-size: clamp(3rem, 8vw, 5rem);
+  font-weight: 800;
+  justify-content: center;
+  letter-spacing: -0.06em;
 }
 
 .status-card {
@@ -366,7 +378,8 @@ h3 {
   margin: 0.45rem 0 0.65rem;
 }
 
-.detail-card a {
+.detail-card a,
+.detail-card span {
   color: var(--primary);
   display: inline-flex;
   font-weight: 800;
